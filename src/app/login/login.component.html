@@ -1,0 +1,46 @@
+
+    
+  
+
+  <div class="container">    
+    <div style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+        <div class="panel panel-info" >
+                <div class="panel-heading">
+                    <div class="panel-title">Log In</div>
+                </div> <br>
+                
+                <p class="alert alert-danger" *ngIf="fd">
+                  {{fd}}
+                </p>
+                <div style="padding-top:30px" class="panel-body" >
+                        
+                    <form method="post" #f="ngForm">                                
+                        <div style="margin-bottom: 25px" class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input type="text" class="form-control"  name="username" placeholder="username" ngModel>                                        
+                                </div>
+                            
+                        <div style="margin-bottom: 25px" class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <input type="password" class="form-control"  name="password" placeholder="password" ngModel>
+                                </div>
+                            <div style="margin-top:10px" class="form-group">
+                                <!-- Button -->
+                                <div class="col-sm-12">
+                                  <input type="submit" class="btn btn-success" (click)="doLogin(f)" value="Login"/> &nbsp;
+                    
+                                </div>
+                            </div>
+                        </form>
+                        <br>  <br><br>
+                        
+                    </div>                     
+                </div>  
+    </div>
+
+   
+</div>
+
+  <div class="footer" style="margin: auto;">
+    <p style="text-align: center;">Copyright 2021 | All Rights Reserved.</p>
+  </div>
